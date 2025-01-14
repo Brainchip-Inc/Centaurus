@@ -1,4 +1,4 @@
-# Centaurus
+# Centaurus ([paper])
 
 <div align="center">
   <img src="assets/centaurus.png" alt="Centaurus" width="600">
@@ -101,3 +101,11 @@ the state-caching behavior can be enabled by `model.set_run_mode('inference')`, 
 mode of `'training'` which does not perform state-caching. Besides state-caching, the inference 
 pipeline also caches the SSM (basis) kernels, as they do not change during inference, thus do not 
 need to be generated each inference pass by the state matrices.
+
+## Contact + Contribution
+
+Please submit a Github issue if you find any bugs. If you'd like to contribute a new feature, feel free to open a Github issue to discuss, or email yanrpei@gmail.com.
+
+## Citation
+
+If you find Centaurus useful, please consider citing the [Centaurus paper] paper:
