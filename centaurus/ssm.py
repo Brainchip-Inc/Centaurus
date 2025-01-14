@@ -131,13 +131,14 @@ class SSMLayer(Kernelizer):
                  in_channels: int, 
                  out_channels: int, 
                  state_blocks=None, 
+                 mode='s5', 
                  norm='batch', 
                  postact='relu', 
                  dropout=None, 
                  dropout_dim=1, 
                  use_activations=False, 
                  **kwargs):
-        super().__init__(**kwargs)
+        super().__init__(mode=mode, **kwargs)
         self.in_channels = in_channels
         self.out_channels = out_channels
         
