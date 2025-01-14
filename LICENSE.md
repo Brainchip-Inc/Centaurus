@@ -1,6 +1,6 @@
 TENN™ “Temporal Event Neural Networks” Non-Commercial License Agreement
 
-TENN’s Version 1.0 Release Date: Jan 2, 2025
+<!-- TENN’s Version 1.0 Release Date: Jan 2, 2025 -->
 
 Definitions:
 

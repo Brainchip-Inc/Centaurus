@@ -17,10 +17,10 @@ setup(
     url='https://https://github.com/Brainchip-Inc/Centaurus',  # Replace with your actual GitHub URL
     packages=find_packages(),  # Automatically find all packages and sub-packages
     install_requires=parse_requirements('requirements.txt'), 
-    license='Apache-2.0',  # Apache 2.0 License
+    license="""“Temporal Event Neural Networks” Non-Commercial License Agreement""", 
     classifiers=[
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: Apache Software License',  # Indicate that it's Apache 2.0
+        """License :: “Temporal Event Neural Networks” Non-Commercial License Agreement""", 
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.6',  # Minimum Python version requirement
