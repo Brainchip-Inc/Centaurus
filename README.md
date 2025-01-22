@@ -1,10 +1,13 @@
-# Centaurus ([paper])
+# Centaurus ([paper](https://openreview.net/forum?id=PkpNRmBZ32))
 
 <div align="center">
   <img src="assets/centaurus.png" alt="Centaurus" width="600">
 </div>
 
-Centaurus is a deep SSM that allows for flexible channel connectivity (much like convolutional neural networks), which is enabled by optimal tensor contractions.
+Centaurus is a deep SSM that allows for flexible channel connectivity (much like convolutional neural networks), 
+which is enabled by optimal tensor contractions. 
+It is an extension of our [aTENNuate network](https://github.com/Brainchip-Inc/aTENNuate), 
+now adapted for several audio tasks such as keyword spotting, denoising, and ASR.
 
 ## Quickstart
 
@@ -104,7 +107,8 @@ need to be generated each inference pass by the state matrices.
 
 ## Contact + Contribution
 
-Please submit a Github issue if you find any bugs. If you'd like to contribute a new feature, feel free to open a Github issue to discuss, or email yanrpei@gmail.com.
+Please submit a Github issue if you find any bugs. 
+If you'd like to contribute a new feature, feel free to open a Github issue to discuss, or email yanrpei@gmail.com.
 
 ## Citation
 
