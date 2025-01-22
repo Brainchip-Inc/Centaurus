@@ -1,4 +1,4 @@
-# Centaurus ([paper](https://openreview.net/forum?id=PkpNRmBZ32))
+# Centaurus ([paper link])
 
 <div align="center">
   <img src="assets/centaurus.png" alt="Centaurus" width="600">
