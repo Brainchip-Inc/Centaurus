@@ -1,7 +1,7 @@
 # Centaurus ([paper link])
 
 <div align="center">
-  <img src="assets/centaurus.png" alt="Centaurus" width="600">
+  <img src="assets/centaurus_logo.webp" alt="Centaurus Logo" width="200">
 </div>
 
 Centaurus is a deep SSM that allows for flexible channel connectivity (much like convolutional neural networks), 
@@ -11,7 +11,14 @@ now adapted for several audio tasks such as keyword spotting, denoising, and ASR
 
 ## Quickstart
 
-It is easy to create a Centaurus SSM layer, similar to how you would for Conv1d layer. For example,
+<div align="center">
+  <img src="assets/centaurus.png" alt="Centaurus" width="600">
+</div>
+
+It is easy to create a Centaurus SSM layer, similar to how you would for Conv1d layer. 
+The only addition is that you need to specify a `num_states` argument to specify the 
+number of internal states parameterizing the layer connection (based on the `mode`). 
+For example,
 
 ```python
 from centaurus import SSMLayer
