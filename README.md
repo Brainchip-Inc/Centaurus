@@ -4,10 +4,12 @@
   <img src="assets/centaurus_logo.webp" alt="Centaurus Logo" width="200">
 </div>
 
-Centaurus is a deep SSM that allows for flexible channel connectivity (much like convolutional neural networks), 
+Centaurus is a deep SSM that allows for flexible channel connectivity (much like CNNs), 
 which is enabled by optimal tensor contractions. 
 It is an extension of our [aTENNuate network](https://github.com/Brainchip-Inc/aTENNuate), 
-now adapted for several audio tasks such as keyword spotting, denoising, and ASR.
+now adapted for several audio tasks such as keyword spotting, denoising, and ASR. 
+Unlike [Mamba](https://github.com/state-spaces/mamba) however, it does not use data gated SSM matrices, 
+yet :wink:.
 
 ## Quickstart
 
@@ -15,9 +17,9 @@ now adapted for several audio tasks such as keyword spotting, denoising, and ASR
   <img src="assets/centaurus.png" alt="Centaurus" width="600">
 </div>
 
-It is easy to create a Centaurus SSM layer, similar to how you would for Conv1d layer. 
-The only addition is that you need to specify a `num_states` argument to specify the 
-number of internal states parameterizing the layer connection (based on the `mode`). 
+It is easy to create a Centaurus SSM layer, similar to how you would for a Conv1d layer. 
+The only addition is that you need to pass a `num_states` argument to specify the 
+number of internal states parameterizing each channel connection (based on the `mode`). 
 For example,
 
 ```python
@@ -40,7 +42,7 @@ is "connected" via 16 internal states. Currently, the supported SSM layer modes 
 4. `'full'`, inspired by the full convolution layer
 
 Internally, the `SSMLayer` would optimize the order of the SSM operations based on the 
-received input features, such as the batch size and length.
+received input features, such as the batch size, length, and channels.
 
 ### Building a network
 
@@ -115,7 +117,8 @@ need to be generated each inference pass by the state matrices.
 ## Contact + Contribution
 
 Please submit a Github issue if you find any bugs. 
-If you'd like to contribute a new feature, feel free to open a Github issue to discuss, or email yanrpei@gmail.com.
+If you'd like to contribute a new feature, feel free to open a Github issue to discuss, 
+or email yanrpei@gmail.com.
 
 ## Citation
 
