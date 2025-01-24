@@ -14,13 +14,14 @@ setup(
     description='Deep SSMs with optimal contractions',  # A short description of the package
     long_description=open('README.md').read(),  # This will pull from your README.md for detailed description
     long_description_content_type='text/markdown',  # Indicating that README is in markdown format
-    url='https://https://github.com/Brainchip-Inc/Centaurus',  # Replace with your actual GitHub URL
+    url='https://github.com/Brainchip-Inc/Centaurus',  # Replace with your actual GitHub URL
     packages=find_packages(),  # Automatically find all packages and sub-packages
-    install_requires=parse_requirements('requirements.txt'), 
-    license="""“Temporal Event Neural Networks” Non-Commercial License Agreement""", 
+    install_requires=['torch>=2.0', 'einops'], 
+    license="Custom",
+    license_files=["LICENSE.md"],
     classifiers=[
         'Programming Language :: Python :: 3',
-        """License :: “Temporal Event Neural Networks” Non-Commercial License Agreement""", 
+        'License :: Other/Proprietary License', 
         'Operating System :: OS Independent',
     ],
     python_requires='>=3.10',  # Minimum Python version requirement
