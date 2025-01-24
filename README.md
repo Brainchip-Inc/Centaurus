@@ -1,4 +1,4 @@
-# Centaurus ([paper link])
+# Centaurus ([paper](https://arxiv.org/abs/2501.13230))
 
 <div align="center">
   <img src="assets/centaurus_logo.webp" alt="Centaurus Logo" width="200">
