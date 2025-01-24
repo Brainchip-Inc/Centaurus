@@ -11,6 +11,8 @@ now adapted for several audio tasks such as keyword spotting, denoising, and ASR
 Unlike [Mamba](https://github.com/state-spaces/mamba) however, it does not use data gated SSM matrices, 
 yet :wink:.
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/let-ssms-be-convnets-state-space-modeling/speech-recognition-on-speech-commands-2)](https://paperswithcode.com/sota/speech-recognition-on-speech-commands-2?p=let-ssms-be-convnets-state-space-modeling)
+
 ## Quickstart
 
 <div align="center">
