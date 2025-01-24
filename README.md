@@ -17,6 +17,11 @@ yet :wink:.
   <img src="assets/centaurus.png" alt="Centaurus" width="600">
 </div>
 
+First you can build from source via
+```
+pip install -e .
+```
+
 It is easy to create a Centaurus SSM layer, similar to how you would for a Conv1d layer. 
 The only addition is that you need to pass a `num_states` argument to specify the 
 number of internal states parameterizing each channel connection (based on the `mode`). 
