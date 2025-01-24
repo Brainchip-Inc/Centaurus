@@ -2,6 +2,7 @@ import torch
 from torch.amp import custom_bwd, custom_fwd
 
 
+@torch.compile
 def _K(dtA_real, dtA_imag, length, weight=None, dim=-2, complex_proj=False, l_shift=0):
     device = dtA_real.device
     lrange = torch.arange(l_shift, length + l_shift, device=device)
