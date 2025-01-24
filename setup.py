@@ -23,5 +23,5 @@ setup(
         """License :: “Temporal Event Neural Networks” Non-Commercial License Agreement""", 
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',  # Minimum Python version requirement
+    python_requires='>=3.10',  # Minimum Python version requirement
 )
