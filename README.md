@@ -116,10 +116,10 @@ model.reset_states()  # zero all internal states
 assert torch.allclose(output, output_chunks)
 ```
 
-the state-caching behavior can be enabled by `model.set_run_mode('inference')`, from the default 
-mode of `'training'` which does not perform state-caching. Besides state-caching, the inference 
-pipeline also caches the SSM (basis) kernels, as they do not change during inference, thus do not 
-need to be generated each inference pass by the state matrices.
+the state-caching behavior can be enabled by `model.set_run_mode('inference')` (the default 
+mode is `'training'` and does not perform state-caching). Besides state-caching, the inference 
+pipeline also pre-computes and stores the SSM (basis) kernels, as they do not change during
+inference, thus do not need to be generated each inference pass by the SSM matrices.
 
 ## Contact + Contribution
 
