@@ -129,4 +129,13 @@ or email yanrpei@gmail.com.
 
 ## Citation
 
-If you find Centaurus useful, please consider citing the [Centaurus paper] paper:
+If you find Centaurus useful, please consider citing [our paper](https://www.arxiv.org/abs/2501.13230):
+
+```
+@article{pei2025let,
+  title={Let SSMs be ConvNets: State-space Modeling with Optimal Tensor Contractions},
+  author={Pei, Yan Ru},
+  journal={arXiv preprint arXiv:2501.13230},
+  year={2025}
+}
+```
